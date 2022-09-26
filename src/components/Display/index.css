@@ -1,0 +1,10 @@
+.content{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border: 2px solid #535bf277;
+  border-radius: 10px;
+  height:60vh;
+  width:60vw;
+  margin-bottom:10px;
+}
