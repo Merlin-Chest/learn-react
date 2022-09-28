@@ -3,9 +3,14 @@ import { BrowserRouter } from "react-router-dom"
 import IndexPage from ".."
 import Display from "../components/Display"
 import FormPage from "../demos/form"
+import AuthorityList from "../demos/HOC/AuthorityList"
+import ChangeChildren from "../demos/HOC/ChangeChildren"
+import DynamicComp from "../demos/HOC/DynamicHoc"
+import GetInstance from "../demos/HOC/GetInstance"
+import SetListener from "../demos/HOC/setListener"
 import { LayerProvider } from "../demos/Provider/layer"
 import { NestedProvider } from "../demos/Provider/nested"
-import ThemeChange from "../demos/Provider/themeChange"
+import ThemeChange from "../demos/Provider/ThemeChange"
 
 const RouterConfig = () => {
   return <BrowserRouter>
@@ -16,6 +21,11 @@ const RouterConfig = () => {
         <Route path="2" element={<NestedProvider></NestedProvider>}></Route>
         <Route path="3" element={<LayerProvider></LayerProvider>}></Route>
         <Route path="4" element={<ThemeChange></ThemeChange>}></Route>
+        <Route path="5" element={<ChangeChildren></ChangeChildren>}></Route>
+        <Route path="6" element={<DynamicComp></DynamicComp>}></Route>
+        <Route path="7" element={<GetInstance></GetInstance>}></Route>
+        <Route path="8" element={<SetListener></SetListener>}></Route>
+        <Route path="9" element={<AuthorityList></AuthorityList>}></Route>
       </Route>
     </Routes >
   </BrowserRouter >
