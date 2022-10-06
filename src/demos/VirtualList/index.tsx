@@ -1,4 +1,4 @@
-import { FC, StyleHTMLAttributes, useEffect, useRef, useState } from "react"
+import { FC, useEffect, useRef, useState } from "react"
 import './index.css'
 type State = {
   renderList: number[],
@@ -51,7 +51,6 @@ const VirtualList: FC<{
     const accommodation = Math.ceil(boxHeight / itemHeight);
     const renderCount = accommodation * 2;
     const dataList = Array(total).fill(1).map((item, index) => index + 1)
-    console.log('accommodation,renderCount:', accommodation, renderCount)
     if (total < renderCount) {
       setStatus(false);
       setState((state) => ({

@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  learn-react:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    labels:
+      # 设置Host 为 localhost 进行域名访问
+      - traefik.http.routers.learn-react.rule=Host(`learn-react.merlin218.top`)
+      # 开启HTTPS
+      - traefik.http.routers.learn-react.tls=true
+      - traefik.http.routers.learn-react.tls.certresolver=le
+
+networks:
+  default:
+    external:
+      name: traefik_default

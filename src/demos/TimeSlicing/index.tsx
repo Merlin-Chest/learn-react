@@ -93,7 +93,7 @@ const TimeSlicing: FC<{
     }
   }, [state.renderList])
 
-  const [duration, setDuration] = useState<string>();
+  const [duration, setDuration] = useState<string>('0s');
 
   // 监听startTime，使用MutationObserver来监听DOM变化
   // 当DOM发生改变时，获取时间，与startTime相减，获得白屏时间
