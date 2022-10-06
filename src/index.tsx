@@ -7,17 +7,17 @@ const IndexPage = () => {
     flexFlow: 'column',
     alignItems: 'flex-start'
   }}>
-    <a onClick={() => navigate('/demo/1')}>Props demo1: Form/FormItem</a>
-    <a onClick={() => navigate('/demo/2')}>Provider demo2: Nested Provider</a>
-    <a onClick={() => navigate('/demo/3')}>Provider demo3: Layer Provider</a>
-    <a onClick={() => navigate('/demo/4')}>Provider demo4: Theme Change</a>
-    <a onClick={() => navigate('/demo/5')}>HOC demo5: Change Children</a>
-    <a onClick={() => navigate('/demo/6')}>HOC demo6: DynamicComp</a>
-    <a onClick={() => navigate('/demo/7')}>HOC demo7: GetInstance</a>
-    <a onClick={() => navigate('/demo/8')}>HOC demo8: SetListener</a>
-    <a onClick={() => navigate('/demo/9')}>HOC demo9: AuthorityList</a>
-    <a onClick={() => navigate('/demo/10')}>RenderOptimize demo10:Time Slicing</a>
-    <a onClick={() => navigate('/demo/11')}>RenderOptimize demo11:Time VirtualList</a>
+    <button onClick={() => navigate('/demo/1')}>Props demo1: Form/FormItem</button>
+    <button onClick={() => navigate('/demo/2')}>Provider demo2: Nested Provider</button>
+    <button onClick={() => navigate('/demo/3')}>Provider demo3: Layer Provider</button>
+    <button onClick={() => navigate('/demo/4')}>Provider demo4: Theme Change</button>
+    <button onClick={() => navigate('/demo/5')}>HOC demo5: Change Children</button>
+    <button onClick={() => navigate('/demo/6')}>HOC demo6: DynamicComp</button>
+    <button onClick={() => navigate('/demo/7')}>HOC demo7: GetInstance</button>
+    <button onClick={() => navigate('/demo/8')}>HOC demo8: SetListener</button>
+    <button onClick={() => navigate('/demo/9')}>HOC demo9: AuthorityList</button>
+    <button onClick={() => navigate('/demo/10')}>RenderOptimize demo10: Time Slicing</button>
+    <button onClick={() => navigate('/demo/11')}>RenderOptimize demo11: VirtualList</button>
   </div>
 }
 
