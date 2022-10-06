@@ -10,7 +10,7 @@ const list = ['a', 'b', 'c', 'd'];
 const List = ({ list }: { list: string[] }) => {
   return <ul>
     {
-      list.map(item => <Item type={item}></Item>)
+      list.map(item => <Item type={item} key={item}></Item>)
     }
   </ul>
 }

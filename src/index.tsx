@@ -16,7 +16,8 @@ const IndexPage = () => {
     <a onClick={() => navigate('/demo/7')}>HOC demo7: GetInstance</a>
     <a onClick={() => navigate('/demo/8')}>HOC demo8: SetListener</a>
     <a onClick={() => navigate('/demo/9')}>HOC demo9: AuthorityList</a>
-    <a onClick={() => navigate('/demo/10')}>渲染优化 demo10: 时间分片</a>
+    <a onClick={() => navigate('/demo/10')}>RenderOptimize demo10:Time Slicing</a>
+    <a onClick={() => navigate('/demo/11')}>RenderOptimize demo11:Time VirtualList</a>
   </div>
 }
 

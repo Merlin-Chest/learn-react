@@ -12,6 +12,7 @@ import { LayerProvider } from "../demos/Provider/layer"
 import { NestedProvider } from "../demos/Provider/nested"
 import ThemeChange from "../demos/Provider/ThemeChange"
 import TimeSlicing from "../demos/TimeSlicing"
+import VirtualList from "../demos/VirtualList"
 
 const RouterConfig = () => {
   return <BrowserRouter>
@@ -28,6 +29,7 @@ const RouterConfig = () => {
         <Route path="8" element={<SetListener></SetListener>}></Route>
         <Route path="9" element={<AuthorityList></AuthorityList>}></Route>
         <Route path="10" element={<TimeSlicing></TimeSlicing>}></Route>
+        <Route path="11" element={<VirtualList></VirtualList>}></Route>
       </Route>
     </Routes >
   </BrowserRouter >

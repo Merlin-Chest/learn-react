@@ -37,7 +37,7 @@ const TimeSlicing: FC<{
 
   const getNextPart = (currentIdx: number) => {
     let { dataList, position } = state;
-    const list = dataList.slice(currentIdx * state.eachRenderNum, (currentIdx + 1) * state.eachRenderNum);
+    const list = dataList.slice(currentIdx * state.eachRenderNum, Math.min(dataList.length, (currentIdx + 1) * state.eachRenderNum));
     return list.map((item, idx) => {
       return <Circle position={position} key={currentIdx * state.eachRenderNum + idx}></Circle>
     })
@@ -95,6 +95,8 @@ const TimeSlicing: FC<{
 
   const [duration, setDuration] = useState<string>();
 
+  // 监听startTime，使用MutationObserver来监听DOM变化
+  // 当DOM发生改变时，获取时间，与startTime相减，获得白屏时间
   useEffect(() => {
     const target = document.getElementById('duration')
     const observer = new MutationObserver(() => {
