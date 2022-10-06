@@ -8,4 +8,5 @@
   width:60vw;
   margin-bottom:10px;
   flex-flow: column;
+  overflow:hidden;
 }

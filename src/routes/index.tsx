@@ -11,6 +11,7 @@ import SetListener from "../demos/HOC/setListener"
 import { LayerProvider } from "../demos/Provider/layer"
 import { NestedProvider } from "../demos/Provider/nested"
 import ThemeChange from "../demos/Provider/ThemeChange"
+import TimeSlicing from "../demos/TimeSlicing"
 
 const RouterConfig = () => {
   return <BrowserRouter>
@@ -26,6 +27,7 @@ const RouterConfig = () => {
         <Route path="7" element={<GetInstance></GetInstance>}></Route>
         <Route path="8" element={<SetListener></SetListener>}></Route>
         <Route path="9" element={<AuthorityList></AuthorityList>}></Route>
+        <Route path="10" element={<TimeSlicing></TimeSlicing>}></Route>
       </Route>
     </Routes >
   </BrowserRouter >
